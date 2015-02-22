@@ -17,7 +17,10 @@ public class Reader extends Thread {
 
 	public void run() {
 		
-		String commend ;
+		while (!stoped) {
+			String commend = new String(senderReceiver.receive());
+			// String parsedCommend [] =commend.split("\ ");
+		}
 	}
 
 	public void close() {
